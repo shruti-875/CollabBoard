@@ -1,0 +1,226 @@
+#circularcursor {
+    background-color: transparent;
+    border: 10px solid black;
+    height: 25px;
+    width: 25px;
+    border-radius: 90%;
+    -moz-border-radius: 80%;
+    -webkit-border-radius: 90%;
+    z-index: 1;
+    cursor: none;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    animation: pulse 1.5s infinite alternate;
+    /* Add a pulsating animation */
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
+  .canvas-btn {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 120px;
+    margin-right: 30px; /* Add margin-right for space between buttons */
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px 15px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-width: thin;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .canvas-btn:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .btn-width {
+    min-width: 30px; /* Increase minimum width for a better button appearance */
+  }
+  
+  .mouse-state {
+    cursor: none;
+  }
+  
+  /* Add a subtle shadow effect to the circular cursor for better visibility */
+  #circularcursor {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Add some space between the icons */
+  .icon-space {
+    margin-top: 20px;
+  }
+  
+  .clear {
+    background-color: rgb(248, 252, 252);
+    display: inline-block;
+    color: black;
+    padding: 13px 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    border: 3px solid  #b2b3b4;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 10px auto;
+  }
+  
+  .pen {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    color: black;
+    padding: 14px 10px;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 70px;
+    border: none;
+    margin: 10px auto;
+  }
+  
+  .earser {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    color: black;
+    padding: 14px 10px;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 70px;
+    border: none;
+    margin: 10px auto;
+    
+  }
+  
+  .save {
+    background-color: rgb(31, 151, 250);
+    display: inline-block;
+    color: rgb(247, 246, 246);
+    padding: 16px 16px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    font-family:"Lucida Console", "Courier New", monospace;
+    width: 100%;
+    border-radius: 10px;
+    /* box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35); */
+    border: none;
+    margin: 10px auto;
+  }
+  
+  
+  .undo {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    color: black;
+    padding: 14px 10px;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 70px;
+    border: none;
+    margin: 10px auto;
+  }
+  
+  .redo {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    color: black;
+    padding: 14px 10px;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 70px;
+    border: none;
+    margin: 10px auto;
+  }
+  
+  .color-circle {
+    display: flex;
+  }
+  
+  .color-option {
+    width: 25px;
+    height: 23px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .sketch-picker-left {
+    position: absolute;
+    left: 220px; /* Adjust the left position according to your needs */
+    top: 0;
+    z-index: 1;
+  }
+  
+  .te{
+    font-family:"Lucida Console", "Courier New", monospace;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .clear,
+  .save {
+    transition: background-color 0.1s;
+    border-color: 0.5s;
+    color:0.15s; /* Add this line for smooth transitions */
+  }
+  
+  .canvas-btn1 {
+    position: absolute;
+    top: 20px; /* Adjust the top distance */
+    right: 30px; /* Adjust the right distance */
+    border-radius: 10px;
+    border-style: solid;
+    padding: 9px 12px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-width: thin;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px auto;
+  }
+  .upload{
+    background-color: rgb(31, 151, 250);
+    display: inline-block;
+    color: rgb(247, 246, 246);
+    padding: 16px 16px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    font-family:"Lucida Console", "Courier New", monospace;
+    width: 100%;
+    border-radius: 10px;
+    /* box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35); */
+    border: none;
+    margin: 10px auto;
+  }
+  
+  .logo{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-right: 3px; /* Add margin-right for space between buttons */
+    text-align: center;
+    display: flex;
+  }
+
+  .logo img {
+    position: absolute;
+    display: block;
+    margin: 0 auto; 
+    width: 210px;
+    height: auto;
+}

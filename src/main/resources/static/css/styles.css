@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1; /* Change the background color of the page */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form,
+.social-icons {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    margin-right: 20px;
+    height: fit-content;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"],
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.login-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form p {
+    margin-top: 10px;
+}
+
+.login-form a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+
+.user-email {
+    font-size: 15px !important;
+}
+
+.square-button {
+    padding: 10px 110px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    
+  }
+  
+  
+  .square-button .button-text {
+    display: inline-block;
+  }
+  
+  .square-button:hover .button-icon {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .time-container {
+    margin: 30px;
+    width:200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+  
+.date{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.h5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+}
+
+.logo img {
+    position: absolute;
+    display: block;
+    margin: 0 auto; 
+    width: 270px;
+    height: auto;
+}

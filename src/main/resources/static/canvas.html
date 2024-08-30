@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Drawing App</title>
+  <link rel="stylesheet" href="./css/canvas.css">
+</head>
+<body>
+  <div class="logo">
+    <img src="./image/newlogo.png" alt="Logo" width="80" height="60">
+  </div>
+  <div class="canvas-btn1">
+    <button onclick="undoAction()" class="btn-width icon-space undo te">
+      Undo
+    </button>
+    <button onclick="redoAction()" class="btn-width icon-space redo te">
+      Redo
+    </button>
+    <!-- Ensure correct label structure -->
+    <label for="imge" class="btn-width icon-space upload te" style="cursor: pointer;">
+      <span style="vertical-align: middle;">
+        Choose File
+      </span>
+    </label>
+    <input type="file" style="display: none;" name="uploadfile" id="imge" accept="image/jpg, image/jpeg, image/png" multiple onchange="handleFileUpload(event)">
+  </div>
+  <div class="canvas-btn">
+    <h1>ToolBar</h1>
+    <button onclick="getPen()" class="btn-width icon-space pen te">
+      Brush
+    </button>
+    <div class="color-circle">
+      <div class="color-option" style="background-color: #f0c756;" onclick="handleColorChange('#FCB900')"></div>
+      <div class="color-option" style="background-color: #00D084;" onclick="handleColorChange('#00D084')"></div>
+      <div class="color-option" style="background-color: #8ED1FC;" onclick="handleColorChange('#8ED1FC')"></div>
+      <div class="color-option" style="background-color: #ed3566;" onclick="handleColorChange('#EB144C')"></div>
+      <div class="color-option" style="background-color: #e855de;" onclick="handleColorChange('#FF00FF')"></div>
+    </div>
+    <input type="range" value="3" min="1" max="30" onchange="handleSizeChange(event)" class="btn-width icon-space">
+    <button onclick="eraseCanvas()" class="icon-space earser te">
+      Eraser
+    </button>
+    <button onclick="clearCanvas()" class="btn-width icon-space clear">
+      Clear Canvas
+    </button>
+    <button onclick="saveCanvas()" class="btn-width icon-space save">
+      Save As Image
+    </button>
+  </div>
+  <canvas style="cursor: default;" onmousedown="startPosition(event)" onmouseup="finishedPosition()" onmousemove="draw(event)" id="canvas"></canvas>
+
+  <script src="./js/canvas.js"></script>
+</body>
+</html>
